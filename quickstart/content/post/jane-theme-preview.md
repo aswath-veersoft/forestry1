@@ -1,37 +1,33 @@
 ---
-title: "Jane Theme Preview"
-date: 2018-01-01T16:01:23+08:00
-lastmod: 2018-03-07T16:01:23+08:00
-draft: false
-tags: ["preview", "shortcodes", "tag-6"]
-categories: ["docs", "shortcodes", "index"]
-author: "Typora"
-
-weight: 1
-
-# You can also close(false) or open(true) something for this content.
-# P.S. comment can only be closed
-# comment: false
-# toc: false
-
-# You can also define another contentCopyright. e.g. contentCopyright: "This is another copyright."
-contentCopyright: '<a href="https://github.com/gohugoio/hugoBasicExample" rel="noopener" target="_blank">See origin</a>'
-# reward: false
+title: Jane Theme Preview
+date: 2018-01-01T16:01:23.000+08:00
+lastmod: 2018-03-07T16:01:23.000+08:00
+tags:
+- preview
+- shortcodes
+- tag-6
+categories:
+- docs
+- shortcodes
+- index
+author: Typora
+weight: "1"
+contentCopyright: <a href="https://github.com/gohugoio/hugoBasicExample" rel="noopener"
+  target="_blank">See origin</a>
 mathjax: true
-
 menu:
   main:
-    parent: "docs"
+    parent: docs
     weight: 1
----
 
+---
 **Markdown** is created by [Daring Fireball](http://daringfireball.net/), the original guideline is [here](http://daringfireball.net/projects/markdown/syntax). Its syntax, however, varies between different parsers or editors.
 
 Please note that HTML fragments in markdown source will be recognized but not parsed or rendered. Also, there may be small reformatting on the original markdown source code after saving.
 
 <!--more-->
 
-## Paragraph and line breaks
+## Paragraph and line breaks - 1
 
 A paragraph is simply one or more consecutive lines of text. In markdown source code, paragraphs are separated by more than one blank lines. In Typora, you only need to press `Return` to create a new paragraph.
 
@@ -55,7 +51,6 @@ In typora, input ‘#’s followed by title content, and press `Return` key will
 
 Markdown uses email-style > characters for block quoting. They are presented as:
 
-
 > This is a blockquote with two paragraphs. This is first paragraph.
 >
 > This is second pragraph.Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
@@ -63,8 +58,6 @@ Markdown uses email-style > characters for block quoting. They are presented as:
 > This is another blockquote with one paragraph. There is three empty line to seperate two blockquote.
 >
 > 这是一段中文测试。
->
-
 
 In typora, just input ‘>’ followed by quote contents a block quote is  generated. Typora will insert proper ‘>’ or line break for you. Block quote inside anther block quote is allowed by adding additional levels of ‘>’.
 
@@ -82,16 +75,15 @@ Input `1. list item 1` will create an ordered list, their markdown source code i
 2. Green
 3. Blue
 
-
 ## Task List
 
 Task lists are lists with items marked as either `[ ]` or `[x]` (incomplete or complete). For example:
 
-- [ ] a task list item
-- [ ] list syntax required
-- [ ] normal **formatting**, @mentions, #1234 refs
-- [ ] incomplete
-- [x] completed
+* \[ \] a task list item
+* \[ \] list syntax required
+* \[ \] normal **formatting**, @mentions, #1234 refs
+* \[ \] incomplete
+* \[x\] completed
 
 You can change the complete/incomplete state by click the checkbox before the item.
 
@@ -113,19 +105,18 @@ public class HelloWorld {
 
 ## Math Blocks
 
-You can render *LaTeX* mathematical expressions using **MathJax**.
+You can render _LaTeX_ mathematical expressions using **MathJax**.
 
-Input `$$`, then press 'Return' key will trigger an input field which accept *Tex/LaTex* source. Following is an example:
+Input `$$`, then press 'Return' key will trigger an input field which accept _Tex/LaTex_ source. Following is an example:
 $$
-\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
-\mathbf{i} & \mathbf{j} & \mathbf{k} \\
-\frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\
-\frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0 \\
-\end{vmatrix}
+\\mathbf{V}_1 \\times \\mathbf{V}_2 =  \\begin{vmatrix}
+\\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\
+\\frac{\\partial X}{\\partial u} &  \\frac{\\partial Y}{\\partial u} & 0 \\
+\\frac{\\partial X}{\\partial v} &  \\frac{\\partial Y}{\\partial v} & 0 \\
+\\end{vmatrix}
 $$
 
-
-In markdown source file, math block is *LaTeX* expression wrapped by ‘$$’ mark:
+In markdown source file, math block is _LaTeX_ expression wrapped by ‘$$’ mark:
 
 ``` markdown
 $$
@@ -139,7 +130,7 @@ $$
 
 ## Tables
 
-Input `| First Header  | Second Header |` and press `return` key will create a table with two column.
+Input `| First Header | Second Header |` and press `return` key will create a table with two column.
 
 After table is created, focus on that table will pop up a toolbar for table, where you can resize, align, or delete table. You can also use context menu to copy and add/delete column/row.
 
@@ -157,14 +148,13 @@ In markdown source code, they look like:
 | <u>Underline</u>  | `<u>underline</u>`  | `<u></u>`            |
 ```
 
-| Name              | Markdown            | HTML tag             |
-| ----------------- | ------------------- | -------------------- |
-| *Emphasis*        | `*Emphasis*`        | `<em></em>`          |
-| **Strong**        | `**Strong**`        | ` <strong></strong>` |
-| `code`            | `` `code` ``        | `<code></code>`      |
-| ~~Strikethrough~~ | `~~Strikethrough~~` | `<del></del`         |
-| <u>Underline</u>  | `<u>underline</u>`  | `<u></u>`            |
-
+| Name | Markdown | HTML tag |
+| --- | --- | --- |
+| Emphasis | *Emphasis* | <em></em> |
+| Strong | **Strong** | <strong></strong> |
+| code | \`code\` | <code></code> |
+| Strikethrough | \~\~Strikethrough\~\~ | <del></del |
+| <u>Underline</u> | <u>underline</u> | <u></u> |
 
 ## Footnotes
 
@@ -176,9 +166,9 @@ You can create footnotes like this[^footnote].
 
 will produce:
 
-You can create footnotes like this[^footnote].
+You can create footnotes like this\[^footnote\].
 
-[^footnote]: Here is the *text* of the **footnote**.
+\[^footnote\]: Here is the _text_ of the **footnote**.
 
 Mouse on the ‘footnote’ superscript to see content of the footnote.
 
@@ -186,13 +176,13 @@ Mouse on the ‘footnote’ superscript to see content of the footnote.
 
 Input `***` or `---` on a blank line and press `return` will draw a horizontal line.
 
-------
+***
 
 ## Links
 
 Markdown supports two style of links: inline and reference.
 
-In both styles, the link text is delimited by [square brackets].
+In both styles, the link text is delimited by \[square brackets\].
 
 To create an inline link, use a set of regular parentheses immediately after the link text’s closing square bracket. Inside the parentheses, put the URL where you want the link to point, along with an optional title for the link, surrounded in quotes. For example:
 
@@ -204,7 +194,7 @@ This is [an example](http://example.com/ "Title") inline link.
 
 will produce:
 
-This is [an example](http://example.com/"Title") inline link. (`<p>This is <a href="http://example.com/" title="Title">`)
+This is [an example](http://example.com/%22Title%22) inline link. (`<p>This is <a href="http://example.com/" title="Title">`)
 
 [This link](http://example.net/) has no title attribute. (`<p><a href="http://example.net/">This link</a> has no`)
 
@@ -228,9 +218,7 @@ Then, anywhere in the document, you define your link label like this, on a line 
 
 In typora, they will be rendered like:
 
-This is [an example][id] reference-style link.
-
-[id]: http://example.com/	"Optional Title Here"
+This is [an example](http://example.com/ "Optional Title Here") reference-style link.
 
 The implicit link name shortcut allows you to omit the name of the link, in which case the link text itself is used as the name. Just use an empty set of square brackets — e.g., to link the word “Google” to the google.com web site, you could simply write:
 
@@ -247,7 +235,7 @@ In typora click link will expand it for editing, command+click will open the hyp
 
 Typora allows you to insert urls as links, wrapped by `<`brackets`>`.
 
-`<i@typora.io>` becomes <i@typora.io>.
+`<i@typora.io>` becomes [i@typora.io](mailto:i@typora.io).
 
 Typora will aslo auto link standard URLs. e.g: www.google.com.
 
@@ -263,7 +251,7 @@ Image looks similar with links, but it requires an additional `!` char before th
 
 You are able to use drag & drop to insert image from image file or we browser. And modify the markdown source code by clicking on the image. Relative path will be used if image is in same directory or sub-directory with current editing document when drag & drop.
 
-For more tips on images, please read <http://support.typora.io//Images/>
+For more tips on images, please read [http://support.typora.io//Images/](http://support.typora.io//Images/)
 
 ## Emphasis
 
@@ -277,7 +265,7 @@ _single underscores_
 
 output:
 
-*single asterisks*
+_single asterisks_
 
 _single underscores_
 
@@ -309,13 +297,13 @@ output:
 
 **double asterisks**
 
-__double underscores__
+**double underscores**
 
 Typora recommends to use `**` symbol.
 
 ## Code
 
-To indicate a span of code, wrap it with backtick quotes (`). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph. For example:
+To indicate a span of code, wrap it with backtick quotes (\`). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph. For example:
 
 ``` markdown
 Use the `printf()` function.
@@ -342,7 +330,6 @@ Underline is powered by raw HTML.
 Input emoji with syntax `:smile:`.
 
 User can trigger auto-complete suggestions for emoji by pressing `ESC` key, or trigger it automatically after enable it on preference panel. Also, input UTF8 emoji char directly from `Edit` -> `Emoji & Symbols` from menu bar is also supported.
-
 
 ## Inline Math
 
